@@ -1,0 +1,59 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+1. The project is a one-pager built with React + Tailwind CSS.
+
+2. The site presents a construction project: a parking garage named “Autogyron 3,” being developed by Örebro Parkering AB in Örebro, Sweden.
+
+3. Color palette:
+   - #c99442 – mustard yellow / orange
+   - #5b6a49 – dark green
+   - #9e998c – light gray-brown
+   - #738c7b – green-gray
+   - #dbc3a8 – beige / sand
+   These colors should be used for backgrounds, sections, text, buttons, and accents.
+
+4. The hero section at the top must contain two full-width images that auto-slide every 5 seconds with a fade transition.
+
+5. The page must be fully responsive – layout and typography should adapt to both desktop and mobile.
+
+6. The project description must include this text:
+   “Örebro Parkering AB intends to build a new parking garage with a total of 250 spaces, consisting of 246 standard spaces and 4 accessible spaces. The building will be located on the Autogyron 3 property in Södra Ladugårdsängen, Örebro. The ground floor will also include a commercial unit built to basic finish, with plumbing preparations for an accessible restroom (RWC) and a small kitchenette.”
+
+7. The UI/UX should feature haptic elements like hover effects, fade-ins, smooth scroll, and subtle animations.
+
+8. No form functionality is needed initially – the site is for informational purposes only.
+
+9. Tone and design should be modern, professional, and accessible to all user types.
+
+10. Components, sections, and images should be modular and reusable where possible.
+
+11. Use functional components (arrow functions) with ES6+ syntax in all React code.
+
+12. Component structure:
+    - Each section (Hero, ProjectInfo, etc.) should be a separate file in the `components/` folder.
+    - Layout and styling should be handled entirely with Tailwind CSS utility classes (no external CSS or CSS modules).
+    - Images should be stored in an `assets/` folder and imported into components.
+
+13. Tailwind conventions:
+    - Follow mobile-first design: default styles for small screens, use `md:`, `lg:` etc for breakpoints.
+    - Use Tailwind utilities for spacing, grid/flex, color, typography, transitions, etc.
+    - Do not use inline styles (`style={{...}}`) – always use Tailwind classes.
+
+14. Animation and haptics:
+    - Use Tailwind's `transition`, `duration`, `ease`, `hover:` and `opacity-` for smooth interactions.
+    - For more complex animations, you may use `framer-motion`, but keep it lightweight and minimal.
+
+15. File and component naming: use PascalCase (e.g., `HeroSection.jsx`, `ProjectInfo.jsx`).
+
+16. Use props to make components reusable, such as `<ImageSlider images={...} />`.
+
+17. Store any copy that may change (like project info or headlines) in a `content.js` file or pass them via props.
+
+18. Keep JSX clean and readable: break long lines, use semantic HTML tags (`<section>`, `<article>`, `<header>`, `<footer>`).
+
+19. For icons, use [Lucide](https://lucide.dev/) – it works great with React and Tailwind.
+
+20. Always test responsiveness in at least 3 viewports: mobile (<768px), tablet (768–1024px), and desktop (>1024px).
